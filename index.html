@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANIME_NEXUS // Info Terminal</title>
+    <title>ANIME_NEXUS // Quantum Terminal</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for futuristic typography -->
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <div class="cyber-grid"></div> <!-- Futuristic background grid -->
+    <div class="cyber-grid"></div>
+    <div class="scanline"></div>
 
     <header>
-        <div class="logo">ANIME<span>_NEXUS_v2.6</span></div>
+        <div class="logo">ANIME<span>_NEXUS_v3.0_PROTRK</span></div>
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="INITIALIZE SEARCH_ QUERY...">
+            <input type="text" id="searchInput" placeholder="INITIALIZE SCAN_ QUERY...">
             <button onclick="searchAnime()">ENGAGE</button>
         </div>
     </header>
 
-    <main id="animeContainer">
-        <div class="terminal-prompt">READY FOR INPUT // SYSTEM_ONLINE</div>
-    </main>
+    <div class="main-workspace">
+        <!-- LEFT SIDEBAR: EXTERNAL STREAMING LINKS -->
+        <aside class="sidebar-panel" id="externalHub">
+            <h3>EXTERNAL_NODES</h3>
+            <div class="node-status"><span class="status-dot green"></span> MAIN_DB: ONLINE</div>
+            <div class="portal-grid">
+                <a id="hianimeLink" href="https://hianime.to" target="_blank" class="portal-btn">
+                    <span>HI_ANIME // LINK</span>
+                </a>
+                <a id="crunchyLink" href="https://crunchyroll.com" target="_blank" class="portal-btn">
+                    <span>CRUNCHYROLL</span>
+                </a>
+                <a id="aniwaveLink" href="https://aniwave.to" target="_blank" class="portal-btn">
+                    <span>ANIX // SOURCE</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CENTER PANEL: PRIMARY ANIME DETAILS DISPLAY -->
+        <main id="animeContainer">
+            <div class="terminal-prompt">READY FOR COGNITIVE INPUT // STANDBY...</div>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
